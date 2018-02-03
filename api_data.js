@@ -869,7 +869,7 @@ define({ "api": [
   },
   {
     "type": "POST",
-    "url": "/user/login",
+    "url": "/users/login",
     "title": "User Login",
     "name": "LoginUser",
     "group": "User",
@@ -934,7 +934,7 @@ define({ "api": [
   },
   {
     "type": "PUT",
-    "url": "/user/logout",
+    "url": "/users/logout",
     "title": "User Logout",
     "name": "LogoutUser",
     "group": "User",
@@ -974,7 +974,7 @@ define({ "api": [
   },
   {
     "type": "POST",
-    "url": "/user/signup",
+    "url": "/users/signup",
     "title": "User Signup",
     "name": "SignupUser",
     "group": "User",
