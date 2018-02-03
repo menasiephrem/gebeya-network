@@ -163,7 +163,7 @@ define({ "api": [
   {
     "type": "GET",
     "url": "/following/",
-    "title": "Get Following By Pagnation",
+    "title": "Get Following By Pagination",
     "name": "GetFollowings",
     "group": "Following",
     "description": "<p>Get all Following by pagination</p>",
@@ -316,7 +316,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "communicating",
-            "description": "<p>did the two party started to comunicate</p>"
+            "description": "<p>did the two party started to communicate</p>"
           }
         ]
       },
@@ -424,7 +424,7 @@ define({ "api": [
   {
     "type": "GET",
     "url": "/matches/",
-    "title": "Get Match By Pagnation",
+    "title": "Get Match By Pagination",
     "name": "GetMatches",
     "group": "Match",
     "description": "<p>Get all matches by pagination</p>",
@@ -462,9 +462,49 @@ define({ "api": [
     "groupTitle": "Match"
   },
   {
+    "type": "GET",
+    "url": "/matches/search/:num",
+    "title": "Search a Match",
+    "name": "SearchMatch",
+    "group": "Match",
+    "description": "<p>Get a specific Match by passing a specific Number in &quot;num&quot;, then all matches who's percent_of_match is grater than num will be returned</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Response Example for 'num'= \"50\":",
+          "content": " HTTP/1.1 200 OK  \n{\n    \"page\": 1,\n    \"total_docs\": 1,\n    \"total_pages\": 1,\n    \"per_page\": 10,\n    \"docs\": [\n        {\n            \"_id\": \"5a75bad60ac1ef36e720b309\",\n            \"last_modified\": \"2018-02-03T13:36:22.853Z\",\n            \"date_created\": \"2018-02-03T13:36:22.853Z\",\n            \"profile2\": {\n                \"_id\": \"5a75ada536cdf2267a922bed\",\n                \"last_modified\": \"2018-02-03T12:40:05.625Z\",\n                \"date_created\": \"2018-02-03T12:40:05.625Z\",\n                \"email\": \"mamo@gebeya.com\",\n                \"user\": \"5a75ada536cdf2267a922bec\",\n                \"phone_number\": 251911123456,\n                \"first_name\": \"Dor\",\n                \"last_name\": \"Mamo\",\n                \"picture\": \"\"\n            },\n            \"profile1\": {\n                \"_id\": \"5a75b167af44b3299cb3f131\",\n                \"last_modified\": \"2018-02-03T12:56:07.463Z\",\n                \"date_created\": \"2018-02-03T12:56:07.463Z\",\n                \"email\": \"mamit@gebeya.com\",\n                \"user\": \"5a75b167af44b3299cb3f130\",\n                \"phone_number\": 251911123456,\n                \"first_name\": \"Alemitu\",\n                \"last_name\": \"Chala\",\n                \"picture\": \"\"\n            },\n            \"percent_of_match\": 75,\n            \"communicating\": false,\n            \"__v\": 0\n        }\n    ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "routes/match.js",
+    "groupTitle": "Match"
+  },
+  {
     "type": "PUT",
     "url": "/matches/:id",
-    "title": "update a matche",
+    "title": "update a match",
     "name": "UpdateMatch",
     "group": "Match",
     "description": "<p>Update a single Matches</p>",
@@ -510,7 +550,7 @@ define({ "api": [
             "type": "Boolean",
             "optional": true,
             "field": "communicating",
-            "description": "<p>did the two party started to comunicate</p>"
+            "description": "<p>did the two party started to communicate</p>"
           }
         ]
       },
@@ -669,7 +709,7 @@ define({ "api": [
   {
     "type": "GET",
     "url": "/profile/",
-    "title": "Get Profile By Pagnation",
+    "title": "Get Profile By Pagination",
     "name": "GetProfiles",
     "group": "Profile",
     "description": "<p>Get all Profiles by pagination</p>",
@@ -698,6 +738,46 @@ define({ "api": [
         {
           "title": "Response Example:",
           "content": " HTTP/1.1 201 Created\n{\n    \"page\": \"1\",\n    \"total_docs\": 2,\n    \"total_pages\": 1,\n    \"per_page\": \"2\",\n    \"docs\": [\n        {\n            \"_id\": \"5a75ada536cdf2267a922bed\",\n            \"last_modified\": \"2018-02-03T12:40:05.625Z\",\n            \"date_created\": \"2018-02-03T12:40:05.625Z\",\n            \"email\": \"mamo@gebeya.com\",\n            \"user\": {\n                \"_id\": \"5a75ada536cdf2267a922bec\",\n                \"last_modified\": \"2018-02-03T12:40:05.207Z\",\n                \"date_created\": \"2018-02-03T12:40:05.207Z\",\n                \"username\": \"mamo@gebeya.com\"\n            },\n            \"__v\": 0,\n            \"sex\": \"M\",\n            \"picture\": \"\"\n        },\n        {\n            \"_id\": \"5a75b167af44b3299cb3f131\",\n            \"last_modified\": \"2018-02-03T12:56:07.463Z\",\n            \"date_created\": \"2018-02-03T12:56:07.463Z\",\n            \"email\": \"mamit@gebeya.com\",\n            \"user\": {\n                \"_id\": \"5a75b167af44b3299cb3f130\",\n                \"last_modified\": \"2018-02-03T12:56:07.452Z\",\n                \"date_created\": \"2018-02-03T12:56:07.452Z\",\n                \"username\": \"mamit@gebeya.com\"\n            },\n            \"__v\": 0,\n            \"sex\": \"M\",\n            \"picture\": \"\"\n        }\n    ]\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "routes/profile.js",
+    "groupTitle": "Profile"
+  },
+  {
+    "type": "GET",
+    "url": "/profile/search/:str",
+    "title": "Search a Profile",
+    "name": "SearchProfile",
+    "group": "Profile",
+    "description": "<p>Get a specific Profile by passing a specific string in &quot;str&quot;, then all employees whos Email, First name or Last name starting with the str will be returned</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "examples": [
+        {
+          "title": "Response Example for 'str'= \"Cha\":",
+          "content": " HTTP/1.1 200 OK  \n{\n    \"page\": 1,\n    \"total_docs\": 1,\n    \"total_pages\": 1,\n    \"per_page\": 10,\n    \"docs\": [\n        {\n            \"_id\": \"5a75b167af44b3299cb3f131\",\n            \"last_modified\": \"2018-02-03T12:56:07.463Z\",\n            \"date_created\": \"2018-02-03T12:56:07.463Z\",\n            \"email\": \"mamit@gebeya.com\",\n            \"user\": {\n                \"_id\": \"5a75b167af44b3299cb3f130\",\n                \"last_modified\": \"2018-02-03T12:56:07.452Z\",\n                \"date_created\": \"2018-02-03T12:56:07.452Z\",\n                \"username\": \"mamit@gebeya.com\"\n            },\n            \"__v\": 0,\n            \"phone_number\": 251911123456,\n            \"first_name\": \"Alemitu\",\n            \"last_name\": \"Chala\",\n            \"sex\": \"F\",\n            \"picture\": \"\"\n        }\n    ]\n}",
           "type": "json"
         }
       ]
