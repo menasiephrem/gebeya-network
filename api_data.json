@@ -6,6 +6,26 @@
     "name": "CreatFollowing",
     "group": "Following",
     "description": "<p>Creates a new Following.</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "parameter": {
       "fields": {
         "Parameter": [
@@ -67,6 +87,26 @@
     "name": "DeleteFollowing",
     "group": "Following",
     "description": "<p>Delete a single Following</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {
@@ -87,6 +127,26 @@
     "name": "GetFollowing",
     "group": "Following",
     "description": "<p>Get a single Following</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {
@@ -107,6 +167,26 @@
     "name": "GetFollowings",
     "group": "Following",
     "description": "<p>Get all Following by pagination</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {
@@ -127,6 +207,26 @@
     "name": "UpdateFollowing",
     "group": "Following",
     "description": "<p>Update a single Following</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "parameter": {
       "fields": {
         "Parameter": [
@@ -167,6 +267,26 @@
     "name": "CreatMatch",
     "group": "Match",
     "description": "<p>Creates a new Match.</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "parameter": {
       "fields": {
         "Parameter": [
@@ -228,6 +348,26 @@
     "name": "DeleteMatch",
     "group": "Match",
     "description": "<p>Delete a single Match</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {
@@ -248,6 +388,26 @@
     "name": "GetMatch",
     "group": "Match",
     "description": "<p>Get a single Match</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {
@@ -268,6 +428,26 @@
     "name": "GetMatches",
     "group": "Match",
     "description": "<p>Get all matches by pagination</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {
@@ -288,6 +468,26 @@
     "name": "UpdateMatch",
     "group": "Match",
     "description": "<p>Update a single Matches</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "parameter": {
       "fields": {
         "Parameter": [
@@ -336,12 +536,83 @@
     "groupTitle": "Match"
   },
   {
+    "type": "PUT",
+    "url": "/profile/:id/changePassword",
+    "title": "Change profile's Password",
+    "name": "ChangePassword",
+    "group": "Profile",
+    "description": "<p>Change a specific employees password</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "password",
+            "description": "<p>New Password</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Request Example:",
+          "content": "{\n    \"password\": \"New_Password\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "version": "0.0.0",
+    "filename": "routes/profile.js",
+    "groupTitle": "Profile"
+  },
+  {
     "type": "DELETE",
     "url": "/profile/:id",
     "title": "Delete a Single profile",
     "name": "DeleteProfile",
     "group": "Profile",
     "description": "<p>Delete a single profile</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {
@@ -362,6 +633,26 @@
     "name": "GetProfile",
     "group": "Profile",
     "description": "<p>Get a single profile</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {
@@ -382,6 +673,26 @@
     "name": "GetProfiles",
     "group": "Profile",
     "description": "<p>Get all Profiles by pagination</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {
@@ -402,6 +713,26 @@
     "name": "UpdateProfile",
     "group": "Profile",
     "description": "<p>Update a single Profiles</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "parameter": {
       "fields": {
         "Parameter": [
@@ -524,10 +855,30 @@
   {
     "type": "PUT",
     "url": "/user/logout",
-    "title": "User Login",
+    "title": "User Logout",
     "name": "LogoutUser",
     "group": "User",
     "description": "<p>logouts out the login user.</p>",
+    "header": {
+      "fields": {
+        "Header": [
+          {
+            "group": "Header",
+            "type": "String",
+            "optional": false,
+            "field": "Authorization",
+            "description": "<p>Bearer + {token} a required header for all the API end-points. The token can be found form the login end point</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"Authorization\": \"Bearer HrAuoeKL2NtpG9tRKkZ/J0vjDZu1psZneK8bKpdO6Ps8x5BXFsA9oMnSD4GCnxk9oWD2u3cmokj7\"\n}",
+          "type": "json"
+        }
+      ]
+    },
     "success": {
       "examples": [
         {
